@@ -13,7 +13,7 @@ def get_advent_number():
 
     num = 0
     for x in advents:
-        if datetime.today() == x:
+        if datetime.today().date() == x.date():
             num = advents.index(x) + 1
 
     return num
